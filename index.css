@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color:rgb(1, 0, 85);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 30px 20px
+}
+
+header nav a {
+    color: #000000;
+    font-weight: 600;
+    padding: 30px;
+    text-decoration: none;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 180px 80px 220px;
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+    color:black;
+}
+
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.botao {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 180px 80px 220px;
+}
+
+#duvidas {
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.duvida {
+    position: relative;
+}
+
+.duvida h3 {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo {
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-radius: 0 0 8px 8px;
+    margin-top: -40px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+footer {
+    background-color: #505050;
+    display: flex;
+    gap: 180px;
+    padding: 60px 75px;
+}
+
+footer .rodape {
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 24px;
+    font-size: 21px;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 30px 0 0;
+}
+
+footer p a {
+    color: rgb(1, 0, 85);
+    text-decoration: none;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#copyright {
+    background-color: rgba(1, 0, 85, 0.945);
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+}
